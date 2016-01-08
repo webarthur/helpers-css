@@ -1,0 +1,13 @@
+/* =Display Helpers
+-----------------------------------------------------------------------------*/
+
+[display~=hidden], [hidden] { display: none }
+[display~=visible] { visibility: visible }
+[display~=insivible] { visibility: hidden }
+
+/* Responsive Utilities */
+
+@media print {
+	[on-printer~=hide] { 	display: none !important }
+	[on-printer~=show] { 	display: block !important }
+}

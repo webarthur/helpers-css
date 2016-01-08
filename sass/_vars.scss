@@ -1,0 +1,39 @@
+
+$text-small: 85%;
+$text-smaller: 75%;
+$text-big: 125%;
+$text-bigger: 145%;
+$text-giant: 250%;
+$text-light: 300;
+$text-thin: 100;
+$text-bold: bold;
+$text-semi-bold: 600;
+$text-bolder: 900;
+$text-indent: 25px;
+$text-danger: #a94442 !default;
+$text-success: #3c763d !default;
+
+/* Based on clrs.cc colors concept - http://clrs.cc/ */
+$color-navy: #001f3f;
+$color-blue: #0074D9;
+$color-aqua: #7FDBFF;
+$color-teal: #39CCCC;
+$color-olive: #3D9970;
+$color-green: #2ECC40;
+$color-lime: #01FF70;
+$color-yellow: #FFDC00;
+$color-orange: #FF851B;
+$color-red: #FF4136;
+$color-maroon: #85144b;
+$color-fuchsia: #F012BE;
+$color-purple: #B10DC9;
+$color-black: #111111;
+$color-gray: #AAAAAA;
+$color-silver: #DDDDDD;
+$color-white: #FFFFFF;
+
+//** Deprecated `$screen-xs` as of v3.0.1
+$screen-mobile:  480px !default;
+$screen-tablet: 768px !default;
+$screen-netbook: 992px !default;
+$screen-desktop: 1200px !default;

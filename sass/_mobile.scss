@@ -1,0 +1,64 @@
+
+@media (max-width: $screen-mobile) {
+
+	[on-mobile~=hidden] { display:none }
+	[on-mobile~=inline] { display:inline }
+	[on-mobile~='inline-block'] { display:inline-block }
+	[on-mobile~=show],[on-mobile~=visible],[on-mobile~=block] { display:block }
+
+  [on-mobile~=left] { float:left }
+  [on-mobile~=right] { float:right }
+  [on-mobile~='no-float'] { float:none }
+
+  [on-mobile~=clear] { clear:both }
+  [on-mobile~=clear-left] { clear:left }
+  [on-mobile~=clear-right] { clear:left-right }
+}
+
+@media (max-width: $screen-tablet) {
+
+	[on-tablet~=hidden] { display:none }
+	[on-tablet~=inline] { display:inline }
+	[on-tablet~='inline-block'] { display:inline-block }
+	[on-tablet~=show],[on-tablet~=visible],[on-tablet~=block] { display:block }
+
+  [on-tablet~=left] { float:left }
+  [on-tablet~=right] { float:right }
+  [on-tablet~='no-float'] { float:none }
+
+  [on-tablet~=clear] { clear:both }
+  [on-tablet~=clear-left] { clear:left }
+  [on-tablet~=clear-right] { clear:left-right }
+}
+
+@media (max-width: $screen-netbook) {
+
+	[on-netbook~=hidden] { display:none }
+	[on-netbook~=inline] { display:inline }
+	[on-netbook~='inline-block'] { display:inline-block }
+	[on-netbook~=show],[on-netbook~=visible],[on-netbook~=block] { display:block }
+
+  [on-netbook~=left] { float:left }
+  [on-netbook~=right] { float:right }
+  [on-netbook~='no-float'] { float:none }
+
+  [on-netbook~=clear] { clear:both }
+  [on-netbook~=clear-left] { clear:left }
+  [on-netbook~=clear-right] { clear:left-right }
+}
+
+@media (max-width: $screen-desktop) {
+
+	[on-desktop~=hidden] { display:none }
+	[on-desktop~=inline] { display:inline }
+	[on-desktop~='inline-block'] { display:inline-block }
+	[on-desktop~=show],[on-desktop~=visible],[on-desktop~=block] { display:block }
+
+  [on-desktop~=left] { float:left }
+  [on-desktop~=right] { float:right }
+  [on-desktop~='no-float'] { float:none }
+
+  [on-desktop~=clear] { clear:both }
+  [on-desktop~=clear-left] { clear:left }
+  [on-desktop~=clear-right] { clear:left-right }
+}

@@ -1,0 +1,128 @@
+/* =Layout Helpers
+-----------------------------------------------------------------------------*/
+/* clearfix */
+[layout~=clearfix], [clearfix] {
+	&:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+/* blocks */
+[layout~=block] { display:block }
+[layout~=table] { display:table }
+[layout~='table-cell'] { display:table-cell }
+[layout~='inline-block'] { display:inline-block }
+[layout~=first] { margin-left: 0 !important }
+[layout~=last] { margin-right: 0 !important }
+[layout~=start] { margin-top: 0 !important }
+[layout~=end] { margin-bottom: 0 !important }
+
+/* alignment */
+[layout~=center] { margin: auto }
+[layout~=left] { float: left }
+[layout~=right] { float: right }
+[layout~=clear] { clear:both!important }
+[layout~='clear-left'] { clear:left!important }
+[layout~='clear-right'] { clear:right!important }
+
+/* borders */
+[layout~=circle] { border-radius: 50% }
+[layout~='few-rounded'] { border-radius: 3px }
+[layout~=rounded] { border-radius: 6px }
+[layout~='more-rounded'] { border-radius: 12px }
+
+/* lists */
+[layout~=flat] { margin-left: 0; list-style: none }
+
+/* position */
+[layout~=absolute] { position:absolute!important }
+[layout~=fixed] { position:fixed!important }
+[layout~=static] { position:static!important }
+[layout~=relative] { position:relative!important }
+
+/* resets */
+[layout~='no-padding'] { padding:0!important }
+[layout~='no-margin'] { margin:0!important }
+[layout~='no-border'] { border:0!important }
+[layout~='no-radius'] { border-radius:0!important }
+
+[layout~='full-height'] { height:100%!important; max-height:100%!important }
+[layout~='full-width'], [layout~='fluid'] { width:100%!important; max-width:100%!important}
+
+/* Responsive embedded objects */
+[layout~='video-wrapper'] {
+	height: 0;
+	padding-bottom: 56.25%; // ratio 16:9
+	position: relative;
+	// margin-bottom: @base-line;
+	& iframe,
+	& object,
+	& embed { 	position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+/* z-index */
+[layout~='z-10'] { z-index: 10 }
+[layout~='z-20'] { z-index: 20 }
+[layout~='z-30'] { z-index: 30 }
+[layout~='z-40'] { z-index: 40 }
+[layout~='z-50'] { z-index: 50 }
+[layout~='z-60'] { z-index: 60 }
+[layout~='z-70'] { z-index: 70 }
+[layout~='z-80'] { z-index: 80 }
+[layout~='z-90'] { z-index: 90 }
+[layout~='z-100'] { z-index: 100 }
+[layout~='z-1000'] { z-index: 1000 }
+[layout~='z-10000'] { z-index: 10000 }
+
+[layout~=half] { width:50% }
+
+/* colors */
+[layout~=navy] { background-color: $color-navy }
+[layout~=blue] { background-color: $color-blue }
+[layout~=aqua] { background-color: $color-aqua }
+[layout~=teal] { background-color: $color-teal }
+[layout~=olive] { background-color: $color-olive }
+[layout~=green] { background-color: $color-green }
+[layout~=lime] { background-color: $color-lime }
+[layout~=yellow] { background-color: $color-yellow }
+[layout~=orange] { background-color: $color-orange }
+[layout~=red] { background-color: $color-red }
+[layout~=fuchsia] { background-color: $color-fuchsia }
+[layout~=purple] { background-color: $color-purple }
+[layout~=maroon] { background-color: $color-maroon }
+[layout~=white] { background-color: $color-white }
+[layout~=silver] { background-color: $color-silver }
+[layout~=gray] { background-color: $color-gray }
+[layout~=black] { background-color: $color-black }
+
+/* opacity */
+[layout~='opacity-10'] { opacity: .1 }
+[layout~='opacity-20'] { opacity: .2 }
+[layout~='opacity-30'] { opacity: .3 }
+[layout~='opacity-40'] { opacity: .4 }
+[layout~='opacity-50'] { opacity: .5 }
+[layout~='opacity-60'] { opacity: .6 }
+[layout~='opacity-70'] { opacity: .7 }
+[layout~='opacity-80'] { opacity: .8 }
+[layout~='opacity-90'] { opacity: .9 }
+[layout~='opacity-100'] { opacity: 1 }
+
+[layout~='gray-10'] { background-color: darken( #ffffff, 10%) }
+[layout~='gray-20'] { background-color: darken( #ffffff, 20%) }
+[layout~='gray-30'] { background-color: darken( #ffffff, 30%) }
+[layout~='gray-40'] { background-color: darken( #ffffff, 40%) }
+[layout~='gray-50'] { background-color: darken( #ffffff, 50%) }
+[layout~='gray-60'] { background-color: darken( #ffffff, 60%) }
+[layout~='gray-70'] { background-color: darken( #ffffff, 70%) }
+[layout~='gray-80'] { background-color: darken( #ffffff, 80%) }
+[layout~='gray-90'] { background-color: darken( #ffffff, 90%) }
