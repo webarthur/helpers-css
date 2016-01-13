@@ -49,7 +49,7 @@ The framework's documentation was included in this repo in the root directory, s
 
 ## [Author](http://araujo.cc)
 
-Code released under Creative Commons Share-alike, so Helpers CSS is absolutely free. It's open-source: you can copy, merge, publish and distribute the framework without any limitations! =D
+* [Arthur Araújo](http://araujo.cc)
 
 ## [Creative Commons License](http://creativecommons.org/licenses/by-sa/4.0/)
 

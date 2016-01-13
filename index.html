@@ -381,17 +381,89 @@
         </td>
       </tr>
 
-      <!-- Colors -->
+      <!-- Background -->
       <tr>
         <td text="right big">Background <br /> <code text="smaller">layout="blue"</code></td>
         <td colspan="2">
           <script>
-          var arr = ['navy', 'blue', 'aqua', 'teal', 'olive', 'green', 'lime', 'yellow', 'orange', 'red', 'fuchsia', 'purple', 'maroon', 'silver', 'gray', 'white', 'gray-10', 'gray-20', 'gray-30', 'gray-40', 'gray-50', 'gray-60', 'gray-70', 'gray-80', 'gray-90', 'black'];
+          var colors = ['navy', 'blue', 'aqua', 'teal', 'olive', 'green', 'lime', 'yellow', 'orange', 'red', 'fuchsia', 'purple', 'maroon', 'silver', 'gray', 'white', 'gray-10', 'gray-20', 'gray-30', 'gray-40', 'gray-50', 'gray-60', 'gray-70', 'gray-80', 'gray-90', 'black'];
+          for(i in colors)
+            document.write(
+              '<div text="center small" layout="left" style="margin:0 5px 10px"> '+colors[i]+''
+              + '<div layout="'+colors[i]+'" style="width:50px; height:50px">'
+              + '&nbsp; </div> </div>'
+            );
+          </script>
+        </td>
+      </tr>
+
+      <!-- Margin -->
+      <tr>
+        <td text="right big">Margin <br /> <code text="smaller nowrap">layout="margin-15"</code></td>
+        <td colspan="2">
+          <script>
+          var arr = [5, 10, 15, 20, 30];
           for(i in arr)
             document.write(
-              '<div text="center small" layout="left" style="margin:0 5px 10px"> '+arr[i]+''
-              + '<div layout="'+arr[i]+'" style="width:50px; height:50px">'
-              + '&nbsp; </div> </div>'
+              '<div layout="left yellow" style="margin:0 5px 10px">'
+              + '<div text="center small white" layout="margin-'+arr[i]+' red" style="width:75px; height:75px">'
+              + 'margin-'+arr[i]+' </div> </div>'
+            );
+          </script>
+          <br layout="clear" />
+          <script>
+          var arr = [5, 10, 15, 20, 30];
+          for(i in arr)
+            document.write(
+              '<div layout="left yellow" style="margin:0 5px 10px">'
+              + '<div text="center small white" layout="h-margin-'+arr[i]+' red" style="width:75px; height:75px">'
+              + ' h-margin-'+arr[i]+' </div> </div>'
+            );
+          </script>
+          <br layout="clear" />
+          <script>
+          var arr = [5, 10, 15, 20, 30];
+          for(i in arr)
+            document.write(
+              '<div layout="left yellow" style="margin:0 5px 10px">'
+              + '<div text="center small white" layout="v-margin-'+arr[i]+' red" style="width:75px; height:75px">'
+              + ' v-margin-'+arr[i]+' </div> </div>'
+            );
+          </script>
+        </td>
+      </tr>
+
+      <!-- Padding -->
+      <tr>
+        <td text="right big">Padding <br /> <code text="smaller nowrap">layout="padding-15"</code></td>
+        <td colspan="2">
+          <script>
+          var arr = [5, 10, 15, 20, 30];
+          for(i in arr)
+            document.write(
+              '<div layout="left teal padding-'+arr[i]+'" style="margin:0 5px 10px">'
+              + '<div text="center small white" layout="red" style="width:75px; height:75px">'
+              + 'padding-'+arr[i]+' </div> </div>'
+            );
+          </script>
+          <br layout="clear" />
+          <script>
+          var arr = [5, 10, 15, 20, 30];
+          for(i in arr)
+            document.write(
+              '<div layout="left teal h-padding-'+arr[i]+'" style="margin:0 5px 10px">'
+              + '<div text="center small white" layout="red" style="width:75px; height:75px">'
+              + ' h-padding-'+arr[i]+' </div> </div>'
+            );
+          </script>
+          <br layout="clear" />
+          <script>
+          var arr = [5, 10, 15, 20, 30];
+          for(i in arr)
+            document.write(
+              '<div layout="left teal v-padding-'+arr[i]+'" style="margin:0 5px 10px">'
+              + '<div text="center small white" layout="red" style="width:75px; height:75px">'
+              + ' v-padding-'+arr[i]+' </div> </div>'
             );
           </script>
         </td>
@@ -537,7 +609,7 @@
           <script>
           for(i=9;i>0;i--)
             document.write(
-              '<div text="right small bold" layout="left relative z-'+i+'0 '+arr[i]+'" style="margin:0 5px 10px; width:50px; height:50px; margin:'+((i*5-50)*-1)+'px 0 0 -15px"> z-'+i+'0'
+              '<div text="right small bold" layout="left relative z-'+i+'0 '+colors[i]+'" style="margin:0 5px 10px; width:50px; height:50px; margin:'+((i*5-50)*-1)+'px 0 0 -15px"> z-'+i+'0'
               + '&nbsp; </div>'
             );
           </script>
@@ -757,6 +829,16 @@
       </nav>
     </section>
   </footer>
+
+  <!--
+
+  Version 0.9.1
+  - Add Margin & Padding
+
+  Version 0.9
+  - The Start!
+
+  -->
 
 </body>
 </html>
