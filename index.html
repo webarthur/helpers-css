@@ -22,7 +22,6 @@
     background: rgba(0,0,0,0.07);
     padding: .2rem .4rem;
     display: inline-block;
-    line-height: 1;
     border-radius: 2px;
   }
   pre, code {
@@ -55,15 +54,10 @@
   section:first-of-type {
     padding: 95px 0;
   }
-  a{
-    color:inherit;
-    text-decoration:none
-  }
   p a {
     font-weight:400
   }
   a[href]:hover{
-    color:#666;
     text-decoration:underline
   }
   nav {
@@ -76,9 +70,9 @@
   </style>
 
 </head>
-<body text="black-70 light line-1.75" layout="no-margin" on-mobile="red">
+<body text="black-70 light line-1.75" layout="no-margin" onmobile="red">
 
-  <nav layout="" text="line-2 center upper light gray-50">
+  <nav text="line-2 center upper light gray-50" links="gray-50 no-decoration hover-blue">
     <a href="#about">About</a>
     <a href="#text">Text</a>
     <a href="#layout">Layout</a>
@@ -86,7 +80,7 @@
     <a href="#enjoy">Get involved!</a>
   </nav>
 
-  <section text="center navy white line-1" layout="center orange full-width" clearfix>
+  <section text="center navy white line-1" layout="center orange full-width fix" links="black-80 no-decoration hover-blue">
 
     <p text="line-2">
       <img src="img/helpers-css.png" alt="Helpers CSS logo" />
@@ -94,7 +88,7 @@
     <h1 text="giant normal">
       Helpers CSS Framework <br />
       <span text="smaller light white">
-        <small>Useful tools for helping on the web development.</small>
+        <small>Useful tools for web development.</small>
       </span>
     </h1>
     <p>
@@ -103,18 +97,18 @@
       </a>
     </p>
     <p>
-      <a href="https://github.com/webarthur/helpers-css" text="normal">Version 0.9</a>
+      <span text="normal">Version 1.1</span>
     </p>
   </section>
 
-  <section layout="center" clearfix>
+  <section layout="center fix" links="blue hover-orange">
 
-    <h2 text="center giant thin"><a id="about">Smallest, Simplest & Fastest</a></h2>
+    <h2 id="about" text="center giant thin">Smallest, Simplest & Fastest</h2>
 
-    <div layout="half left" on-tablet="no-float">
+    <div layout="half left" ontablet="no-float">
       <h2 text="normal">Semantic HTML6 attributes</h2>
       <p>
-        <strong text="orange">Helpers CSS</strong> uses basically four different types of HTML attributes:
+        <strong text="orange">Helpers CSS</strong> uses basically six different types of HTML attributes:
       </p>
       <ul>
         <li>
@@ -124,30 +118,33 @@
           <b>Layout:</b> &lt;div layout="left absolute z-10">lorem ipsum&lt;/div>
         </li>
         <li>
-          <b>Devices:</b> &lt;img on-mobile="no-float" on-tablet="left" on-netbook="right" on-desktop="hidden" />
+          <b>Devices:</b> &lt;img onmobile="no-float" ontablet="left" onnetbook="right" ondesktop="hidden" />
         </li>
         <li>
-          <b>Printer:</b> &lt;hr on-print="hidden" />
+          <b>Columns:</b> &lt;div cols="3"> [...] &lt;/div>
+        </li>
+        <li>
+          <b>Grid:</b> &lt;div grid="5"> [...] &lt;/div>
         </li>
       </ul>
       <p>
-        Helpers CSS can help you to remove repetition and leave the classes just for specific elements cofiguration. It's based on HTML6, <abbr title="Don't Repeat Yourself">DRY</abbr> and <a href="https://smacss.com/" target="_blank">SMACSS</a> methodologies and compiled with <a href="http://sass-lang.com/" target="_blank">SASS</a>. The helpers attributes will definitely help you scale your code.
+        Helpers CSS can help you to remove repetition and leave the classes just for specific elements. It's based on HTML6, <abbr title="Don't Repeat Yourself">DRY</abbr> and <a href="https://smacss.com/" target="_blank">SMACSS</a> concepts and can be compiled with <a href="http://sass-lang.com/" target="_blank">SASS</a>. The helpers attributes will definitely help you to scale your code.
       </p>
       <p>
         It's easy to use, simple and <strong>scalable</strong>.
       </p>
     </div>
-    <div layout="half right" on-tablet="no-float">
+    <div layout="half right" ontablet="no-float">
       <h3 text="normal">Example:</h3>
       <p text="gray-80 normal center">
-        <span text="bold big line-1 red">Can you</span> feel the <span text="underline italic blue semi-bold">future</span>? HTML6 <span text="pre white-80 line-1.5" layout="navy few-rounded inline-block">  advantages  </span> are expecting for <span text="bolder">you</span>!
+        <span text="bold underline big line-1 red">Can you</span> feel the <span text="italic blue semi-bold">future</span>? HTML6 <span text="pre white-80 line-1.5" layout="navy few-rounded inline-block">  advantages  </span> are expecting for <span text="bolder">you</span>!
       </p>
       <pre>
-        <code text="pre-wrap" layout="rounded gray-10" class="html" style="padding:10px">&lt;p text="gray-80 normal center">
-  &lt;span text="bold big line-1 red">
+        <code text="pre-wrap .9em line-1.5" layout="rounded gray-10" class="html" style="padding:15px">&lt;p text="gray-80 normal center">
+  &lt;span text="bold underline big line-1 red">
     Can you
   &lt;/span> feel the
-  &lt;span text="underline italic blue semi-bold">
+  &lt;span text="italic blue semi-bold">
     future
   &lt;/span>? HTML6
   &lt;span text="pre white-80 line-1.5" layout="navy few-rounded inline-block">  advantages  &lt;/span>
@@ -167,30 +164,7 @@
 
     <h2 text="center thin giant"><a id="text">Text Helpers</a></h2>
 
-    <table class="table-bordered" layout="center" style="max-width:590px">
-
-      <!-- Size -->
-      <tr>
-        <td text="right big" rowspan="5">Size</td>
-        <td><code>text="smaller"</code></td>
-        <td text="smaller">font-size: 75%</td>
-      </tr>
-      <tr>
-        <td><code>text="small"</code></td>
-        <td text="small">font-size: 85%</td>
-      </tr>
-      <tr>
-        <td><code>text="big"</code></td>
-        <td text="big">font-size: 125%</td>
-      </tr>
-      <tr>
-        <td><code>text="bigger"</code></td>
-        <td text="bigger">font-size: 145%</td>
-      </tr>
-      <tr>
-        <td><code>text="giant"</code></td>
-        <td text="giant">font-size: 250%</td>
-      </tr>
+    <table layout="center" style="max-width:590px">
 
       <!-- Weight -->
       <tr>
@@ -217,6 +191,76 @@
       <tr>
         <td><code>text="bolder"</code></td>
         <td text="bolder">font-weight: bolder</td>
+      </tr>
+
+      <!-- Size -->
+      <tr>
+        <td text="right big" rowspan="5">Size</td>
+        <td><code>text="smaller"</code></td>
+        <td text="smaller">font-size: 75%</td>
+      </tr>
+      <tr>
+        <td><code>text="small"</code></td>
+        <td text="small">font-size: 85%</td>
+      </tr>
+      <tr>
+        <td><code>text="big"</code></td>
+        <td text="big">font-size: 125%</td>
+      </tr>
+      <tr>
+        <td><code>text="bigger"</code></td>
+        <td text="bigger">font-size: 145%</td>
+      </tr>
+      <tr>
+        <td><code>text="giant"</code></td>
+        <td text="giant">font-size: 250%</td>
+      </tr>
+
+      <!-- Family -->
+      <tr>
+        <td text="right big" rowspan="11">Family</td>
+        <td><code>text="ubuntu"</code></td>
+        <td text="ubuntu">font-family: Ubuntu, "times new roman", times, serif</td>
+      </tr>
+      <tr>
+        <td><code>text="arial"</code></td>
+        <td text="arial">font-family: Arial, Helvetica, sans-serif</td>
+      </tr>
+      <tr>
+        <td><code>text="lucida"</code></td>
+        <td text="lucida">"Lucida Sans Unicode", "Lucida Grande", Lucida, sans-serif</td>
+      </tr>
+      <tr>
+        <td><code>text="tahoma"</code></td>
+        <td text="tahoma">font-family: Tahoma, sans-serif</td>
+      </tr>
+      <tr>
+        <td><code>text="trebuchet"</code></td>
+        <td text="trebuchet">font-family: Trebuchet, "Trebuchet MS", Arial, Helvetica, sans-serif</td>
+      </tr>
+      <tr>
+        <td><code>text="verdana"</code></td>
+        <td text="verdana">font-family: Verdana, Geneva, Arial, Helvetica, sans-serif</td>
+      </tr>
+      <tr>
+        <td><code>text="georgia"</code></td>
+        <td text="georgia">font-family: Georgia, Times, serif</td>
+      </tr>
+      <tr>
+        <td><code>text="helvetica"</code></td>
+        <td text="helvetica">font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif</td>
+      </tr>
+      <tr>
+        <td><code>text="mono"</code></td>
+        <td text="mono">font-family: 'Courier New', monospace</td>
+      </tr>
+      <tr>
+        <td><code>text="times"</code></td>
+        <td text="times">font-family: "Times New Roman", Times, serif</td>
+      </tr>
+      <tr>
+        <td><code>text="impact"</code></td>
+        <td text="impact">font-family: Impact, Charcoal, sans-serif</td>
       </tr>
 
       <!-- Colors -->
@@ -348,7 +392,7 @@
 
     <h2 text="center thin giant"><a id="layout">Layout Helpers</a></h2>
 
-    <table class="table-bordered" layout="center" style="max-width: 820px">
+    <table layout="center" style="max-width: 850px">
 
       <!-- Opacity -->
       <tr>
@@ -397,42 +441,6 @@
         </td>
       </tr>
 
-      <!-- Margin -->
-      <tr>
-        <td text="right big">Margin <br /> <code text="smaller nowrap">layout="margin-15"</code></td>
-        <td colspan="2">
-          <script>
-          var arr = [5, 10, 15, 20, 30];
-          for(i in arr)
-            document.write(
-              '<div layout="left yellow" style="margin:0 5px 10px">'
-              + '<div text="center small white" layout="margin-'+arr[i]+' red" style="width:75px; height:75px">'
-              + 'margin-'+arr[i]+' </div> </div>'
-            );
-          </script>
-          <br layout="clear" />
-          <script>
-          var arr = [5, 10, 15, 20, 30];
-          for(i in arr)
-            document.write(
-              '<div layout="left yellow" style="margin:0 5px 10px">'
-              + '<div text="center small white" layout="h-margin-'+arr[i]+' red" style="width:75px; height:75px">'
-              + ' h-margin-'+arr[i]+' </div> </div>'
-            );
-          </script>
-          <br layout="clear" />
-          <script>
-          var arr = [5, 10, 15, 20, 30];
-          for(i in arr)
-            document.write(
-              '<div layout="left yellow" style="margin:0 5px 10px">'
-              + '<div text="center small white" layout="v-margin-'+arr[i]+' red" style="width:75px; height:75px">'
-              + ' v-margin-'+arr[i]+' </div> </div>'
-            );
-          </script>
-        </td>
-      </tr>
-
       <!-- Padding -->
       <tr>
         <td text="right big">Padding <br /> <code text="smaller nowrap">layout="padding-15"</code></td>
@@ -469,16 +477,74 @@
         </td>
       </tr>
 
+      <!-- Margin 0.9 -->
+      <tr>
+        <td text="right big">Margin <br /> <code text="smaller nowrap">layout="margin-15"</code></td>
+        <td colspan="2">
+          <script>
+          var arr = [5, 10, 15, 20, 30];
+          for(i in arr)
+            document.write(
+              '<div layout="left yellow" style="margin:0 5px 10px">'
+              + '<div text="center small white" layout="margin-'+arr[i]+' red" style="width:75px; height:75px">'
+              + 'margin-'+arr[i]+' </div> </div>'
+            );
+          </script>
+          <br layout="clear" />
+          <script>
+          var arr = [5, 10, 15, 20, 30];
+          for(i in arr)
+            document.write(
+              '<div layout="left yellow" style="margin:0 5px 10px">'
+              + '<div text="center small white" layout="h-margin-'+arr[i]+' red" style="width:75px; height:75px">'
+              + ' h-margin-'+arr[i]+' </div> </div>'
+            );
+          </script>
+          <br layout="clear" />
+          <script>
+          var arr = [5, 10, 15, 20, 30];
+          for(i in arr)
+            document.write(
+              '<div layout="left yellow" style="margin:0 5px 10px">'
+              + '<div text="center small white" layout="v-margin-'+arr[i]+' red" style="width:75px; height:75px">'
+              + ' v-margin-'+arr[i]+' </div> </div>'
+            );
+          </script>
+        </td>
+      </tr>
+
+      <!-- Margin 1.0 -->
+      <tr>
+        <td text="right big">
+          Margin Direction<br />
+          <code text="smaller nowrap">layout="top-15"</code>
+          <code text="smaller nowrap">layout="bottom-15"</code>
+          <code text="smaller nowrap">layout="left-15"</code>
+          <code text="smaller nowrap">layout="right-15"</code>
+        </td>
+        <td colspan="2">
+          <script>
+          var arr = [2, 3, 4, 5, 10, 15, 20, 30];
+          for(i in arr)
+            document.write(
+              '<div layout="left yellow" style="margin:0 5px 10px">'
+              + '<div text="center small white" layout="top-'+arr[i]+' red" style="width:60px; height:60px">'
+              + 'margin-'+arr[i]+' </div> </div>'
+            );
+          </script>
+        </td>
+      </tr>
+
     </table>
 
     <p>
       &nbsp;
     </p>
 
-    <table class="table-bordered" layout="center">
+    <table layout="center">
       <!-- Position -->
       <tr>
-        <td text="right big" rowspan="4">Position</td>
+        <td text="right big" rowspan="8">Position</td>
         <td><code>layout="absolute"</code></td>
         <td>position: absolute</td>
       </tr>
@@ -494,12 +560,28 @@
         <td><code>layout="relative"</code></td>
         <td>position: relative</td>
       </tr>
+      <tr>
+        <td><code>layout="top"</code></td>
+        <td>top: 0</td>
+      </tr>
+      <tr>
+        <td><code>layout="bottom"</code></td>
+        <td>bottom: 0</td>
+      </tr>
+      <tr>
+        <td><code>layout="left"</code></td>
+        <td>left: 0</td>
+      </tr>
+      <tr>
+        <td><code>layout="right"</code></td>
+        <td>right: 0</td>
+      </tr>
 
       <!-- Alignment -->
       <tr>
         <td text="right big" rowspan="6">Alignment</td>
         <td><code>layout="center"</code></td>
-        <td>margin: auto</td>
+        <td>margin-left: auto; margin-right: auto</td>
       </tr>
       <tr>
         <td><code>layout="left"</code></td>
@@ -525,8 +607,8 @@
       <!-- Blocks -->
       <tr>
         <td text="right big" rowspan="9">Blocks</td>
-        <td><code>layout="clearfix"</code></td>
-        <td text="italic">automatically clear its child elements</td>
+        <td><code>layout="fix"</code></td>
+        <td text="italic">automatically clear its child elements (clearfix)</td>
       </tr>
       <tr>
         <td><code>layout="block"</code></td>
@@ -563,7 +645,7 @@
 
       <!-- Resets -->
       <tr>
-        <td text="right big" rowspan="4">Resets</td>
+        <td text="right big" rowspan="8">Resets</td>
         <td><code>layout="no-margin"</code></td>
         <td>margin: 0</td>
       </tr>
@@ -578,6 +660,29 @@
       <tr>
         <td><code>layout="no-radius"</code></td>
         <td>border-radius: 0</td>
+      </tr>
+      <tr>
+        <td><code>layout="no-top"</code></td>
+        <td>margin-top: 0 !important</td>
+      </tr>
+      <tr>
+        <td><code>layout="no-bottom"</code></td>
+        <td>margin-bottom: 0 !important</td>
+      </tr>
+      <tr>
+        <td><code>layout="no-left"</code></td>
+        <td>margin-left: 0 !important</td>
+      </tr>
+      <tr>
+        <td><code>layout="no-right"</code></td>
+        <td>margin-right: 0 !important</td>
+      </tr>
+
+      <!-- Overflow -->
+      <tr>
+        <td text="right big" rowspan="1">Overflow</td>
+        <td><code>layout="no-overflow"</code></td>
+        <td>overflow: hidden</td>
       </tr>
 
       <!-- Lists -->
@@ -625,149 +730,149 @@
 
     <h2 text="center thin giant"><a id="mobile">Mobile & Printer Helpers</a></h2>
 
-    <table class="table-bordered" layout="center">
+    <table layout="center">
 
       <tr>
         <td>
-          <code>on-print="[...]"</code>
+          <code>onprint="[...]"</code>
         </td>
         <td>@media print</td>
       </tr>
 
       <tr>
         <td>
-          <code>on-mobile="[...]"</code>
+          <code>onmobile="[...]"</code>
         </td>
         <td>@media (max-width: 480px)</td>
       </tr>
 
       <tr>
         <td>
-          <code>on-tablet="[...]"</code>
+          <code>ontablet="[...]"</code>
         </td>
         <td>@media (max-width: 768px)</td>
       </tr>
 
       <tr>
         <td>
-          <code>on-netbook="[...]"</code>
+          <code>onnetbook="[...]"</code>
         </td>
         <td>@media (max-width: 992px)</td>
       </tr>
 
       <tr>
         <td>
-          <code>on-desktop="[...]"</code>
+          <code>ondesktop="[...]"</code>
         </td>
         <td>@media (max-width: 1200px)</td>
       </tr>
 
       <tr>
         <td>
-          <code>on-print="hidden"</code>
-          <br /> <code>on-mobile="hidden"</code>
-          <br /> <code>on-tablet="hidden"</code>
-          <br /> <code>on-netbook="hidden"</code>
-          <br /> <code>on-desktop="hidden"</code>
+          <code>onprint="hidden"</code>
+          <br /> <code>onmobile="hidden"</code>
+          <br /> <code>ontablet="hidden"</code>
+          <br /> <code>onnetbook="hidden"</code>
+          <br /> <code>ondesktop="hidden"</code>
         </td>
         <td>display: none</td>
       </tr>
 
       <tr>
         <td>
-          <code>on-print="inline"</code>
-          <br /> <code>on-mobile="inline"</code>
-          <br /> <code>on-tablet="inline"</code>
-          <br /> <code>on-netbook="inline"</code>
-          <br /> <code>on-desktop="inline"</code>
+          <code>onprint="inline"</code>
+          <br /> <code>onmobile="inline"</code>
+          <br /> <code>ontablet="inline"</code>
+          <br /> <code>onnetbook="inline"</code>
+          <br /> <code>ondesktop="inline"</code>
         </td>
         <td>display: inline</td>
       </tr>
 
       <tr>
         <td>
-          <code>on-print="inline-block"</code>
-          <br /> <code>on-mobile="inline-block"</code>
-          <br /> <code>on-tablet="inline-block"</code>
-          <br /> <code>on-netbook="inline-block"</code>
-          <br /> <code>on-desktop="inline-block"</code>
+          <code>onprint="inline-block"</code>
+          <br /> <code>onmobile="inline-block"</code>
+          <br /> <code>ontablet="inline-block"</code>
+          <br /> <code>onnetbook="inline-block"</code>
+          <br /> <code>ondesktop="inline-block"</code>
         </td>
         <td>display: inline-block</td>
       </tr>
 
       <tr>
         <td>
-          <code>on-print="block"</code>
-          <br /> <code>on-mobile="block"</code>
-          <br /> <code>on-tablet="block"</code>
-          <br /> <code>on-netbook="block"</code>
-          <br /> <code>on-desktop="block"</code>
+          <code>onprint="block"</code>
+          <br /> <code>onmobile="block"</code>
+          <br /> <code>ontablet="block"</code>
+          <br /> <code>onnetbook="block"</code>
+          <br /> <code>ondesktop="block"</code>
         </td>
         <td>display: block</td>
       </tr>
 
       <tr>
         <td>
-          <code>on-print="left"</code>
-          <br /> <code>on-mobile="left"</code>
-          <br /> <code>on-tablet="left"</code>
-          <br /> <code>on-netbook="left"</code>
-          <br /> <code>on-desktop="left"</code>
+          <code>onprint="left"</code>
+          <br /> <code>onmobile="left"</code>
+          <br /> <code>ontablet="left"</code>
+          <br /> <code>onnetbook="left"</code>
+          <br /> <code>ondesktop="left"</code>
         </td>
         <td>float: left</td>
       </tr>
 
       <tr>
         <td>
-          <code>on-print="right"</code>
-          <br /> <code>on-mobile="right"</code>
-          <br /> <code>on-tablet="right"</code>
-          <br /> <code>on-netbook="right"</code>
-          <br /> <code>on-desktop="right"</code>
+          <code>onprint="right"</code>
+          <br /> <code>onmobile="right"</code>
+          <br /> <code>ontablet="right"</code>
+          <br /> <code>onnetbook="right"</code>
+          <br /> <code>ondesktop="right"</code>
         </td>
         <td>float: right</td>
       </tr>
 
       <tr>
         <td>
-          <code>on-print="no-float"</code>
-          <br /> <code>on-mobile="no-float"</code>
-          <br /> <code>on-tablet="no-float"</code>
-          <br /> <code>on-netbook="no-float"</code>
-          <br /> <code>on-desktop="no-float"</code>
+          <code>onprint="no-float"</code>
+          <br /> <code>onmobile="no-float"</code>
+          <br /> <code>ontablet="no-float"</code>
+          <br /> <code>onnetbook="no-float"</code>
+          <br /> <code>ondesktop="no-float"</code>
         </td>
         <td>float: none</td>
       </tr>
 
       <tr>
         <td>
-          <code>on-print="clear"</code>
-          <br /> <code>on-mobile="clear"</code>
-          <br /> <code>on-tablet="clear"</code>
-          <br /> <code>on-netbook="clear"</code>
-          <br /> <code>on-desktop="clear"</code>
+          <code>onprint="clear"</code>
+          <br /> <code>onmobile="clear"</code>
+          <br /> <code>ontablet="clear"</code>
+          <br /> <code>onnetbook="clear"</code>
+          <br /> <code>ondesktop="clear"</code>
         </td>
         <td>clear: both</td>
       </tr>
 
       <tr>
         <td>
-          <code>on-print="clear-left"</code>
-          <br /> <code>on-mobile="clear-left"</code>
-          <br /> <code>on-tablet="clear-left"</code>
-          <br /> <code>on-netbook="clear-left"</code>
-          <br /> <code>on-desktop="clear-left"</code>
+          <code>onprint="clear-left"</code>
+          <br /> <code>onmobile="clear-left"</code>
+          <br /> <code>ontablet="clear-left"</code>
+          <br /> <code>onnetbook="clear-left"</code>
+          <br /> <code>ondesktop="clear-left"</code>
         </td>
         <td>clear: left</td>
       </tr>
 
       <tr>
         <td>
-          <code>on-print="clear-right"</code>
-          <br /> <code>on-mobile="clear-right"</code>
-          <br /> <code>on-tablet="clear-right"</code>
-          <br /> <code>on-netbook="clear-right"</code>
-          <br /> <code>on-desktop="clear-right"</code>
+          <code>onprint="clear-right"</code>
+          <br /> <code>onmobile="clear-right"</code>
+          <br /> <code>ontablet="clear-right"</code>
+          <br /> <code>onnetbook="clear-right"</code>
+          <br /> <code>ondesktop="clear-right"</code>
         </td>
         <td>clear: right</td>
       </tr>
@@ -777,11 +882,11 @@
 
   <hr />
 
-  <section layout="center">
+  <section layout="center" links="blue no-decoration hover-orange">
 
-    <h2 text="center thin giant"><a id="enjoy">Get involved!</a></h2>
+    <h2 id="enjoy" text="center thin giant">Get involved!</h2>
 
-    <table class="table-bordered" layout="center">
+    <table layout="center">
       <div text="right" layout="half left">
         <p>
           <img src="img/github.png" alt="GitHub" style="margin-right:20px" />
@@ -794,7 +899,10 @@
         </p>
         <h3 text="bigger normal">Contribute on GitHub:</h3>
         <p>
-          You want to take part in the development? You can fork Helpers CSS on GitHub then send me a pull request. Add a new issue if you found a bug.
+          Do you want to take part in the development? You can fork Helpers CSS on GitHub then send me a pull request. Add a new issue if you found a bug.
+        </p>
+        <p>
+          <a target="_blank" href="https://github.com/webarthur/helpers-css">https://github.com/webarthur/helpers-css</a>
         </p>
         <p>
           &nbsp;
@@ -816,7 +924,7 @@
     </table>
   </section>
 
-  <footer layout="clear gray-80" style="padding:20px 0" clearfix>
+  <footer layout="clear gray-80 fix" style="padding:20px 0" links="white no-decoration fadeIn">
     <section text="gray-40 light" layout="center no-padding">
       <nav>
         <a target="_blank" layout="right" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
@@ -841,11 +949,33 @@
 
   <!--
 
+  Version 1.1
+  * Added [cols] attributes: <div cols="2">
+  * Added [grid] attributes: <div grid="2">
+  * Added grid max-size (960, 1200) attributes: <div layout="max-1200">
+  * Added [layout=flex]
+  * Added [layout~=colapse] for table border collapse
+
+  Version 1.0
+  * Added [links] attribute: <ul links="blue hover-red fadeOut">
+  * Added Margins: top-x, bottom-x, left-x, right-x
+  * Added Font Families: text="ubuntu"
+  * Added em text sizes: text=".9em"
+  * [layout=clearfix] changes to [layout~=fix]
+  * [on-print] changes to [onprint]
+  * [on-mobile] changes to [onmobile]
+  * [on-tablet] changes to [ontablet]
+  * [on-netbook] changes to [onnetbook]
+  * [on-desktop] changes to [ondesktop]
+  * [onprinter] removed
+  * [text=required] removed
+  * [clearfix] removed
+
   Version 0.9.1
-  - Add Margin & Padding
+  * Add Margin & Padding
 
   Version 0.9
-  - The Start!
+  * The Start!
 
   -->
 

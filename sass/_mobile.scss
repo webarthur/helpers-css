@@ -1,72 +1,72 @@
 
 @media (max-width: $screen-mobile) {
 
-	[on-mobile~=hidden] { display:none }
-	[on-mobile~=inline] { display:inline }
-	[on-mobile~='inline-block'] { display:inline-block }
-	[on-mobile~=show],[on-mobile~=visible],[on-mobile~=block] { display:block }
+	[onmobile~=hidden] { display:none }
+	[onmobile~=inline] { display:inline }
+	[onmobile~='inline-block'] { display:inline-block }
+	[onmobile~=show],[onmobile~=visible],[onmobile~=block] { display:block }
 
-  [on-mobile~=left] { float:left }
-  [on-mobile~=right] { float:right }
-  [on-mobile~='no-float'] { float:none }
+  [onmobile~=left] { float:left }
+  [onmobile~=right] { float:right }
+  [onmobile~='no-float'] { float:none }
 
-  [on-mobile~=clear] { clear:both }
-  [on-mobile~=clear-left] { clear:left }
-  [on-mobile~=clear-right] { clear:left-right }
+  [onmobile~=clear] { clear:both }
+  [onmobile~=clear-left] { clear:left }
+  [onmobile~=clear-right] { clear:left-right }
 
-	[on-mobile~=full-width] { width:100% }
+	[onmobile~=full-width] { width:100% }
 }
 
 @media (max-width: $screen-tablet) {
 
-	[on-tablet~=hidden] { display:none }
-	[on-tablet~=inline] { display:inline }
-	[on-tablet~='inline-block'] { display:inline-block }
-	[on-tablet~=show],[on-tablet~=visible],[on-tablet~=block] { display:block }
+	[ontablet~=hidden] { display:none }
+	[ontablet~=inline] { display:inline }
+	[ontablet~='inline-block'] { display:inline-block }
+	[ontablet~=show],[ontablet~=visible],[ontablet~=block] { display:block }
 
-  [on-tablet~=left] { float:left }
-  [on-tablet~=right] { float:right }
-  [on-tablet~='no-float'] { float:none }
+  [ontablet~=left] { float:left }
+  [ontablet~=right] { float:right }
+  [ontablet~='no-float'] { float:none }
 
-  [on-tablet~=clear] { clear:both }
-  [on-tablet~=clear-left] { clear:left }
-  [on-tablet~=clear-right] { clear:left-right }
+  [ontablet~=clear] { clear:both }
+  [ontablet~=clear-left] { clear:left }
+  [ontablet~=clear-right] { clear:left-right }
 
-	[on-tablet~=full-width] { width:100% }
+	[ontablet~=full-width] { width:100% }
 }
 
 @media (max-width: $screen-netbook) {
 
-	[on-netbook~=hidden] { display:none }
-	[on-netbook~=inline] { display:inline }
-	[on-netbook~='inline-block'] { display:inline-block }
-	[on-netbook~=show],[on-netbook~=visible],[on-netbook~=block] { display:block }
+	[onnetbook~=hidden] { display:none }
+	[onnetbook~=inline] { display:inline }
+	[onnetbook~='inline-block'] { display:inline-block }
+	[onnetbook~=show],[onnetbook~=visible],[onnetbook~=block] { display:block }
 
-  [on-netbook~=left] { float:left }
-  [on-netbook~=right] { float:right }
-  [on-netbook~='no-float'] { float:none }
+  [onnetbook~=left] { float:left }
+  [onnetbook~=right] { float:right }
+  [onnetbook~='no-float'] { float:none }
 
-  [on-netbook~=clear] { clear:both }
-  [on-netbook~=clear-left] { clear:left }
-  [on-netbook~=clear-right] { clear:left-right }
+  [onnetbook~=clear] { clear:both }
+  [onnetbook~=clear-left] { clear:left }
+  [onnetbook~=clear-right] { clear:left-right }
 
-	[on-netbook~=full-width] { width:100% }
+	[onnetbook~=full-width] { width:100% }
 }
 
 @media (max-width: $screen-desktop) {
 
-	[on-desktop~=hidden] { display:none }
-	[on-desktop~=inline] { display:inline }
-	[on-desktop~='inline-block'] { display:inline-block }
-	[on-desktop~=show],[on-desktop~=visible],[on-desktop~=block] { display:block }
+	[ondesktop~=hidden] { display:none }
+	[ondesktop~=inline] { display:inline }
+	[ondesktop~='inline-block'] { display:inline-block }
+	[ondesktop~=show],[ondesktop~=visible],[ondesktop~=block] { display:block }
 
-  [on-desktop~=left] { float:left }
-  [on-desktop~=right] { float:right }
-  [on-desktop~='no-float'] { float:none }
+  [ondesktop~=left] { float:left }
+  [ondesktop~=right] { float:right }
+  [ondesktop~='no-float'] { float:none }
 
-  [on-desktop~=clear] { clear:both }
-  [on-desktop~=clear-left] { clear:left }
-  [on-desktop~=clear-right] { clear:left-right }
+  [ondesktop~=clear] { clear:both }
+  [ondesktop~=clear-left] { clear:left }
+  [ondesktop~=clear-right] { clear:left-right }
 
-	[on-desktop~=full-width] { width:100% }
+	[ondesktop~=full-width] { width:100% }
 }

@@ -1,0 +1,19 @@
+/* =Flexbox Helpers
+-----------------------------------------------------------------------------*/
+
+/* flexbox */
+[layout~='flex-row'] { flex-direction:row }
+[layout~='flex-row-reverse'] { flex-direction:row-reverse }
+[layout~='flex-column'] { flex-direction:column }
+[layout~='flex-column-reverse'] { flex-direction:column-reverse }
+
+[layout~='flex-no-wrap'] { flex-wrap:nowrap }
+[layout~='flex-wrap'] { flex-wrap:wrap }
+[layout~='flex-wrap-reverse'] { flex-wrap:wrap-reverse }
+
+[layout~='flex-start'] { justify-content:flex-start }
+[layout~='flex-end'] { justify-content:flex-end }
+[layout~='flex-center'] { justify-content:center }
+[layout~='flex-space-between'] { justify-content:space-between }
+[layout~='space-around'] { justify-content:space-around }
+

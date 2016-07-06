@@ -1,12 +1,43 @@
 /* =Text Helpers
 -----------------------------------------------------------------------------*/
 
+/* family */
+[text~='ubuntu'] { font-family: Ubuntu, "times new roman", times, serif }
+[text~='arial'] { font-family: Arial, Helvetica, sans-serif }
+[text~='lucida'] { font-family: "Lucida Sans Unicode", "Lucida Grande", Lucida, sans-serif }
+[text~='tahoma'] { font-family: Tahoma, sans-serif }
+[text~='trebuchet'] { font-family: Trebuchet, "Trebuchet MS", Arial, Helvetica, sans-serif }
+[text~='verdana'] { font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; }
+[text~='georgia'] { font-family: Georgia, Times, serif; }
+[text~='helvetica'] { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif }
+[text~='mono'], [text~='courier'] { font-family: 'Courier New', monospace }
+[text~='times'] { font-family: "Times New Roman", Times, serif; }
+[text~='impact'] { font-family: Impact, Charcoal, sans-serif; }
+
 /* size */
 [text~=small] { font-size: $text-small }
 [text~=smaller] { font-size: $text-smaller }
 [text~=large], [text~=big] { font-size: $text-big }
 [text~=larger], [text~=bigger] { font-size: $text-bigger }
 [text~=giant] { font-size: $text-giant }
+[text~='.5em'] { font-size:.5em }
+[text~='.6em'] { font-size:.6em }
+[text~='.7em'] { font-size:.7em }
+[text~='.8em'] { font-size:.8em }
+[text~='.9em'] { font-size:.9em }
+[text~='1em'] { font-size:1em }
+[text~='1.1em'] { font-size:1.1em }
+[text~='1.2em'] { font-size:1.2em }
+[text~='1.3em'] { font-size:1.3em }
+[text~='1.4em'] { font-size:1.4em }
+[text~='1.5em'] { font-size:1.5em }
+[text~='1.6em'] { font-size:1.6em }
+[text~='1.7em'] { font-size:1.7em }
+[text~='1.8em'] { font-size:1.8em }
+[text~='1.9em'] { font-size:1.9em }
+[text~='2em'] { font-size:2em }
+[text~='2.2em'] { font-size:2.2em }
+[text~='2.4em'] { font-size:2.4em }
 
 /* weight */
 [text~=normal] { font-weight: normal !important }
@@ -56,8 +87,8 @@
 [text~=overline] { text-decoration: overline }
 [text~='line-through'] { text-decoration: line-through }
 [text~=underline] { text-decoration: underline }
-[text~='no-decoration'] { text-decoration: none }
 [text~='small-caps'] { text-variant: small-caps }
+[text~='no-decoration'], [links~='no-decoration'] a { text-decoration: none }
 
 
 /* direction */
@@ -65,61 +96,55 @@
 [text~=ltr] { direction: ltr }
 
 /* colors */
-[text~=required] {
-	font-weight: bold;
-	color: $text-danger;
-	font-size: 1.1em;
-	text-transform: none;
-}
 [text~=req],
 [text~=danger], [text~=error] { color: $text-danger }
 [text~=success] { color: $text-success }
 [text~=highlight] { background-color: #f7f3e2 }
 
-[text~=navy] { color: $color-navy }
-[text~=blue] { color: $color-blue }
-[text~=aqua] { color: $color-aqua }
-[text~=teal] { color: $color-teal }
-[text~=olive] { color: $color-olive }
-[text~=green] { color: $color-green }
-[text~=lime] { color: $color-lime }
-[text~=yellow] { color: $color-yellow }
-[text~=orange] { color: $color-orange }
-[text~=red] { color: $color-red }
-[text~=fuchsia] { color: $color-fuchsia }
-[text~=purple] { color: $color-purple }
-[text~=maroon] { color: $color-maroon }
-[text~=white] { color: $color-white }
-[text~=silver] { color: $color-silver }
-[text~=gray] { color: $color-gray }
-[text~=black] { color: $color-black }
+[text~=navy], [links~='navy'] a, [links~='hover-navy'] a:hover { color: $color-navy }
+[text~=blue], [links~='blue'] a, [links~='hover-blue'] a:hover { color: $color-blue }
+[text~=aqua], [links~='aqua'] a, [links~='hover-aqua'] a:hover { color: $color-aqua }
+[text~=teal], [links~='teal'] a, [links~='hover-teal'] a:hover { color: $color-teal }
+[text~=olive], [links~='olive'] a, [links~='hover-olive'] a:hover { color: $color-olive }
+[text~=green], [links~='green'] a, [links~='hover-green'] a:hover { color: $color-green }
+[text~=lime], [links~='lime'] a, [links~='hover-lime'] a:hover { color: $color-lime }
+[text~=yellow], [links~='yellow'] a, [links~='hover-yellow'] a:hover { color: $color-yellow }
+[text~=orange], [links~='orange'] a, [links~='hover-orange'] a:hover { color: $color-orange }
+[text~=red], [links~='red'] a, [links~='hover-red'] a:hover { color: $color-red }
+[text~=fuchsia], [links~='fuchsia'] a, [links~='hover-fuchsia'] a:hover { color: $color-fuchsia }
+[text~=purple], [links~='purple'] a, [links~='hover-purple'] a:hover { color: $color-purple }
+[text~=maroon], [links~='maroon'] a, [links~='hover-maroon'] a:hover { color: $color-maroon }
+[text~=white], [links~='white'] a, [links~='hover-white'] a:hover { color: $color-white }
+[text~=silver], [links~='silver'] a, [links~='hover-silver'] a:hover { color: $color-silver }
+[text~=gray], [links~='gray'] a, [links~='hover-gray'] a:hover { color: $color-gray }
+[text~=black], [links~='black'] a, [links~='hover-black'] a:hover { color: $color-black }
 
-[text~='gray-10'] { color: darken( #ffffff, 10%) }
-[text~='gray-20'] { color: darken( #ffffff, 20%) }
-[text~='gray-30'] { color: darken( #ffffff, 30%) }
-[text~='gray-40'] { color: darken( #ffffff, 40%) }
-[text~='gray-50'] { color: darken( #ffffff, 50%) }
-[text~='gray-60'] { color: darken( #ffffff, 60%) }
-[text~='gray-70'] { color: darken( #ffffff, 70%) }
-[text~='gray-80'] { color: darken( #ffffff, 80%) }
-[text~='gray-90'] { color: darken( #ffffff, 90%) }
+[text~='gray-10'], [links~='gray-10'] a, [links~='hover-gray-10'] a:hover { color: darken( #ffffff, 10%) }
+[text~='gray-20'], [links~='gray-20'] a, [links~='hover-gray-20'] a:hover { color: darken( #ffffff, 20%) }
+[text~='gray-30'], [links~='gray-30'] a, [links~='hover-gray-30'] a:hover { color: darken( #ffffff, 30%) }
+[text~='gray-40'], [links~='gray-40'] a, [links~='hover-gray-40'] a:hover { color: darken( #ffffff, 40%) }
+[text~='gray-50'], [links~='gray-50'] a, [links~='hover-gray-50'] a:hover { color: darken( #ffffff, 50%) }
+[text~='gray-60'], [links~='gray-60'] a, [links~='hover-gray-60'] a:hover { color: darken( #ffffff, 60%) }
+[text~='gray-70'], [links~='gray-70'] a, [links~='hover-gray-70'] a:hover { color: darken( #ffffff, 70%) }
+[text~='gray-80'], [links~='gray-80'] a, [links~='hover-gray-80'] a:hover { color: darken( #ffffff, 80%) }
+[text~='gray-90'], [links~='gray-90'] a, [links~='hover-gray-90'] a:hover { color: darken( #ffffff, 90%) }
 
-[text~='black-10'] { color: rgba(0, 0, 0, .1) }
-[text~='black-20'] { color: rgba(0, 0, 0, .2) }
-[text~='black-30'] { color: rgba(0, 0, 0, .3) }
-[text~='black-40'] { color: rgba(0, 0, 0, .4) }
-[text~='black-50'] { color: rgba(0, 0, 0, .5) }
-[text~='black-60'] { color: rgba(0, 0, 0, .6) }
-[text~='black-70'] { color: rgba(0, 0, 0, .7) }
-[text~='black-80'] { color: rgba(0, 0, 0, .8) }
-[text~='black-90'] { color: rgba(0, 0, 0, .9) }
+[text~='black-10'], [links~='black-10'] a, [links~='hover-black-10'] a:hover { color: rgba(0, 0, 0, .1) }
+[text~='black-20'], [links~='black-20'] a, [links~='hover-black-20'] a:hover { color: rgba(0, 0, 0, .2) }
+[text~='black-30'], [links~='black-30'] a, [links~='hover-black-30'] a:hover { color: rgba(0, 0, 0, .3) }
+[text~='black-40'], [links~='black-40'] a, [links~='hover-black-40'] a:hover { color: rgba(0, 0, 0, .4) }
+[text~='black-50'], [links~='black-50'] a, [links~='hover-black-50'] a:hover { color: rgba(0, 0, 0, .5) }
+[text~='black-60'], [links~='black-60'] a, [links~='hover-black-60'] a:hover { color: rgba(0, 0, 0, .6) }
+[text~='black-70'], [links~='black-70'] a, [links~='hover-black-70'] a:hover { color: rgba(0, 0, 0, .7) }
+[text~='black-80'], [links~='black-80'] a, [links~='hover-black-80'] a:hover { color: rgba(0, 0, 0, .8) }
+[text~='black-90'], [links~='black-90'] a, [links~='hover-black-90'] a:hover { color: rgba(0, 0, 0, .9) }
 
-[text~='white-10'] { color: rgba(255, 255, 255, .1) }
-[text~='white-20'] { color: rgba(255, 255, 255, .2) }
-[text~='white-30'] { color: rgba(255, 255, 255, .3) }
-[text~='white-40'] { color: rgba(255, 255, 255, .4) }
-[text~='white-50'] { color: rgba(255, 255, 255, .5) }
-[text~='white-60'] { color: rgba(255, 255, 255, .6) }
-[text~='white-70'] { color: rgba(255, 255, 255, .7) }
-[text~='white-80'] { color: rgba(255, 255, 255, .8) }
-[text~='white-90'] { color: rgba(255, 255, 255, .9) }
+[text~='white-10'], [links~='white-10'] a, [links~='hover-white-10'] a:hover { color: rgba(255, 255, 255, .1) }
+[text~='white-20'], [links~='white-20'] a, [links~='hover-white-20'] a:hover { color: rgba(255, 255, 255, .2) }
+[text~='white-30'], [links~='white-30'] a, [links~='hover-white-30'] a:hover { color: rgba(255, 255, 255, .3) }
+[text~='white-40'], [links~='white-40'] a, [links~='hover-white-40'] a:hover { color: rgba(255, 255, 255, .4) }
+[text~='white-50'], [links~='white-50'] a, [links~='hover-white-50'] a:hover { color: rgba(255, 255, 255, .5) }
+[text~='white-60'], [links~='white-60'] a, [links~='hover-white-60'] a:hover { color: rgba(255, 255, 255, .6) }
+[text~='white-70'], [links~='white-70'] a, [links~='hover-white-70'] a:hover { color: rgba(255, 255, 255, .7) }
+[text~='white-80'], [links~='white-80'] a, [links~='hover-white-80'] a:hover { color: rgba(255, 255, 255, .8) }
+[text~='white-90'], [links~='white-90'] a, [links~='hover-white-90'] a:hover { color: rgba(255, 255, 255, .9) }

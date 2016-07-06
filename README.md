@@ -1,9 +1,9 @@
 # [Helpers CSS Framework](http://helpers.araujo.cc)
-Useful tools for helping on the web development.
+Useful tools for web development.
 
 ## How to:
 
-Helpers CSS uses basically four different types of HTML attributes:
+Helpers CSS uses basically six different types of HTML attributes:
 
 ```html
 Text: <span text="bold italic blue">lorem ipsum</span>
@@ -17,6 +17,10 @@ Devices: <img
             on-desktop="hidden" />
 
 Printer: <hr on-print="hidden" />
+
+Columns: <div cols="3"> [...] </div>
+
+Grid: <div grid="5"> [...] </div>
 ```
 
 <b>Helpers CSS</b> can help you to remove repetition and leave the classes just for specific elements cofiguration. It's based on HTML6, DRY and SMACSS methodologies and compiled with SASS. The helpers attributes will definitely help you scale your code.

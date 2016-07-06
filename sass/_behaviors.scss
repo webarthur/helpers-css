@@ -1,0 +1,22 @@
+/* =Behaviors Helpers
+-----------------------------------------------------------------------------*/
+
+[onhover~=fadeOut],
+[links~=fadeOut] a
+	{ opacity: 1 }
+
+[onhover~=fadeOut]:hover,
+[links~=fadeOut] a:hover
+	{ opacity: .7 }
+	
+[onhover~=fadeIn],
+[links~=fadeIn] a
+	{ opacity: .7 }
+
+[onhover~=fadeIn]:hover,
+[links~=fadeIn] a:hover
+	{ opacity: 1 }
+
+[onhover~=pointer],
+[links~=pointer] a
+	{ cursor: pointer }

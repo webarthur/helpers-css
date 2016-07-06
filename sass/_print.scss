@@ -1,15 +1,15 @@
 @media print
 {
-  [on-print~=hidden] { display:hidden }
-	[on-print~=inline] { display:inline }
-	[on-print~='inline-block'] { display:inline-block }
-	[on-print~=show],[on-print~=visible],[on-print~=block] { display:block }
+  [onprint~=hidden] { display:hidden }
+	[onprint~=inline] { display:inline }
+	[onprint~='inline-block'] { display:inline-block }
+	[onprint~=show],[onprint~=visible],[onprint~=block] { display:block }
 
-  [on-print~=left] { float:left }
-  [on-print~=right] { float:right }
-  [on-print~='no-float'] { float:none }
+  [onprint~=left] { float:left }
+  [onprint~=right] { float:right }
+  [onprint~='no-float'] { float:none }
 
-  [on-print~=clear] { clear:both }
-  [on-print~=clear-left] { clear:left }
-  [on-print~=clear-right] { clear:left-right }
+  [onprint~=clear] { clear:both }
+  [onprint~=clear-left] { clear:left }
+  [onprint~=clear-right] { clear:left-right }
 }
