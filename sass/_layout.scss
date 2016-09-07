@@ -222,3 +222,16 @@
 [layout~='gray-70'] { background-color: darken( #ffffff, 70%) }
 [layout~='gray-80'] { background-color: darken( #ffffff, 80%) }
 [layout~='gray-90'] { background-color: darken( #ffffff, 90%) }
+
+[layout~=responsive],
+[layout~="responsive-images"] img {
+	max-width:100%;
+	height:auto;
+}
+
+[layout~="border-sizing"],
+[layout~="border-sizing-all"] * {
+	box-sizing:border-box;
+}
+[layout~='auto'] { overflow:auto }
+[layout~='scroll'] { overflow:scroll }
