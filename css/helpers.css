@@ -922,6 +922,21 @@
 [layout~='gray-90'] {
   background-color: #1a1a1a; }
 
+[layout~=responsive],
+[layout~="responsive-images"] img {
+  max-width: 100%;
+  height: auto; }
+
+[layout~="border-sizing"],
+[layout~="border-sizing-all"] * {
+  box-sizing: border-box; }
+
+[layout~='auto'] {
+  overflow: auto; }
+
+[layout~='scroll'] {
+  overflow: scroll; }
+
 /* =Display Helpers
 -----------------------------------------------------------------------------*/
 [display~=initial] {
