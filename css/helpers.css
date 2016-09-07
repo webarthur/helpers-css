@@ -1003,36 +1003,34 @@
 -----------------------------------------------------------------------------*/
 [grid] {
   display: flex;
-  flex-wrap: wrap;
-  margin-left: -2.12765957%;
-  width: 100%; }
+  flex-flow: wrap; }
 
-[grid] > * {
-  margin-left: 2.12765957%;
-  flex: 1;
-  /* float:left; */
-  /* margin-bottom: 20px */ }
+[grid~="2"] > * {
+  width: 50%; }
 
-[grid~='2'] > * {
-  width: 47.87234%; }
+[grid~="3"] > * {
+  width: 33.33333%; }
 
-[grid~='3'] > * {
-  width: 31.17234%; }
+[grid~="4"] > * {
+  width: 25%; }
 
-[grid~='4'] > * {
-  width: 22.87234%; }
+[grid~="5"] > * {
+  width: 20%; }
 
-[grid~='5'] > * {
-  width: 17.87234%; }
+[grid~="6"] > * {
+  width: 16.66667%; }
 
-[grid~='6'] > * {
-  width: 14.47234%; }
+[grid~="7"] > * {
+  width: 14.28571%; }
 
-[grid~='7'] > * {
-  width: 12.15805%; }
+[grid~="8"] > * {
+  width: 12.5%; }
 
-[grid~='8'] > * {
-  width: 10.37234%; }
+[grid~="9"] > * {
+  width: 11.11111%; }
+
+[grid~="10"] > * {
+  width: 10%; }
 
 @media (max-width: 480px) {
   [onmobile~=hidden] {
