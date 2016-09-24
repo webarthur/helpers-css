@@ -2,6 +2,9 @@
 -----------------------------------------------------------------------------*/
 
 [display~=initial] { display: initial !important }
+[display~=table] { display: table }
+[display~=table-cell] { display: table-cell }
+[display~=table-row] { display: table-row }
 [display~=hidden], [hidden] { display: none }
 [display~=visible] { visibility: visible }
 [display~=insivible] { visibility: hidden }
