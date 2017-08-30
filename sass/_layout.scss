@@ -167,6 +167,8 @@
 }
 
 /* z-index */
+[layout~='z-negative'] { z-index: -1 }
+[layout~='z-1'] { z-index: 1 }
 [layout~='z-10'] { z-index: 10 }
 [layout~='z-20'] { z-index: 20 }
 [layout~='z-30'] { z-index: 30 }
@@ -222,6 +224,26 @@
 [layout~='gray-70'] { background-color: darken( #ffffff, 70%) }
 [layout~='gray-80'] { background-color: darken( #ffffff, 80%) }
 [layout~='gray-90'] { background-color: darken( #ffffff, 90%) }
+
+[layout~='black-10'], [links~='black-bg-10'] a, [links~='hover-bg-black-10'] a:hover { background-color: rgba(0, 0, 0, .1) }
+[layout~='black-20'], [links~='black-bg-20'] a, [links~='hover-bg-black-20'] a:hover { background-color: rgba(0, 0, 0, .2) }
+[layout~='black-30'], [links~='black-bg-30'] a, [links~='hover-bg-black-30'] a:hover { background-color: rgba(0, 0, 0, .3) }
+[layout~='black-40'], [links~='black-bg-40'] a, [links~='hover-bg-black-40'] a:hover { background-color: rgba(0, 0, 0, .4) }
+[layout~='black-50'], [links~='black-bg-50'] a, [links~='hover-bg-black-50'] a:hover { background-color: rgba(0, 0, 0, .5) }
+[layout~='black-60'], [links~='black-bg-60'] a, [links~='hover-bg-black-60'] a:hover { background-color: rgba(0, 0, 0, .6) }
+[layout~='black-70'], [links~='black-bg-70'] a, [links~='hover-bg-black-70'] a:hover { background-color: rgba(0, 0, 0, .7) }
+[layout~='black-80'], [links~='black-bg-80'] a, [links~='hover-bg-black-80'] a:hover { background-color: rgba(0, 0, 0, .8) }
+[layout~='black-90'], [links~='black-bg-90'] a, [links~='hover-bg-black-90'] a:hover { background-color: rgba(0, 0, 0, .9) }
+
+// [layout~='white-10'], [links~='bg-white-10'] a, [links~='hover-bg-white-10'] a:hover { background-color: rgba(255, 255, 255, .1) }
+// [layout~='white-20'], [links~='bg-white-20'] a, [links~='hover-bg-white-20'] a:hover { background-color: rgba(255, 255, 255, .2) }
+// [layout~='white-30'], [links~='bg-white-30'] a, [links~='hover-bg-white-30'] a:hover { background-color: rgba(255, 255, 255, .3) }
+// [layout~='white-40'], [links~='bg-white-40'] a, [links~='hover-bg-white-40'] a:hover { background-color: rgba(255, 255, 255, .4) }
+// [layout~='white-50'], [links~='bg-white-50'] a, [links~='hover-bg-white-50'] a:hover { background-color: rgba(255, 255, 255, .5) }
+// [layout~='white-60'], [links~='bg-white-60'] a, [links~='hover-bg-white-60'] a:hover { background-color: rgba(255, 255, 255, .6) }
+// [layout~='white-70'], [links~='bg-white-70'] a, [links~='hover-bg-white-70'] a:hover { background-color: rgba(255, 255, 255, .7) }
+// [layout~='white-80'], [links~='bg-white-80'] a, [links~='hover-bg-white-80'] a:hover { background-color: rgba(255, 255, 255, .8) }
+// [layout~='white-90'], [links~='bg-white-90'] a, [links~='hover-bg-white-90'] a:hover { background-color: rgba(255, 255, 255, .9) }
 
 [layout~=responsive],
 [layout~="responsive-images"] img {

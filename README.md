@@ -1,6 +1,8 @@
 # [Helpers CSS Framework](http://helpers.araujo.cc)
 Useful tools for web development.
 
+Documentation: http://helpers.araujo.cc
+
 ## How to:
 
 Helpers CSS uses basically six different types of HTML attributes:
@@ -23,7 +25,7 @@ Columns: <div cols="3"> [...] </div>
 Grid: <div grid="5"> [...] </div>
 ```
 
-<b>Helpers CSS</b> can help you to remove repetition and leave the classes just for specific elements cofiguration. It's based on HTML6, DRY and SMACSS methodologies and compiled with SASS. The helpers attributes will definitely help you scale your code.
+**Helpers CSS** can help you to remove repetition and leave the classes just for specific elements cofiguration. It's based on *HTML6*, *DRY* and *SMACSS* methodologies and compiled with SASS. The helpers attributes will definitely help you scale your code.
 
 It's easy to use, simple and scalable.
 

@@ -11,9 +11,42 @@
 [layout~='flex-wrap'] { flex-wrap:wrap }
 [layout~='flex-wrap-reverse'] { flex-wrap:wrap-reverse }
 
-[layout~='flex-start'] { justify-content:flex-start }
-[layout~='flex-end'] { justify-content:flex-end }
-[layout~='flex-center'] { justify-content:center }
-[layout~='flex-space-between'] { justify-content:space-between }
-[layout~='space-around'] { justify-content:space-around }
+// justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly
 
+[layout~='justify-start'] { justify-content:flex-start }
+[layout~='justify-end'] { justify-content:flex-end }
+[layout~='justify-center'] { justify-content:center }
+[layout~='justify-space-between'] { justify-content:space-between }
+[layout~='justify-space-around'] { justify-content:space-around }
+[layout~='justify-space-evenly'] { justify-content:space-evenly }
+
+// align-items: flex-start | flex-end | center | baseline | stretch;
+
+[layout~='items-start'] { align-items:flex-start }
+[layout~='items-end'] { align-items:flex-end }
+[layout~='items-center'] { align-items:center }
+[layout~='items-baseline'] { align-items:baseline }
+[layout~='items-stretch'] { align-items:stretch }
+
+// align-content: flex-start | flex-end | center | space-between | space-around | stretch;
+
+[layout~='content-start'] { align-content:flex-start }
+[layout~='content-end'] { align-content:flex-end }
+[layout~='content-center'] { align-content:center }
+[layout~='content-space-between'] { align-content:space-between }
+[layout~='content-space-around'] { align-content:space-around }
+[layout~='content-space-evenly'] { align-content:space-evenly }
+
+// align-self: auto | flex-start | flex-end | center | baseline | stretch;
+
+[layout~='self-auto'] { align-self:auto }
+[layout~='self-start'] { align-self:flex-start }
+[layout~='self-end'] { align-self:flex-end }
+[layout~='self-center'] { align-self:center }
+[layout~='self-baseline'] { align-self:baseline }
+[layout~='self-stretch'] { align-self:stretch }
+
+
+[layout~='grow'],
+[layout~='flex-grow']
+ { flex-grow: 1 }
