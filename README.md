@@ -1,7 +1,7 @@
-# [Helpers CSS Framework](http://helpers.araujo.cc)
+# [Helpers CSS Framework](https://webarthur.github.io/helpers-css/)
 Useful tools for web development.
 
-Documentation: http://helpers.araujo.cc
+Documentation: https://webarthur.github.io/helpers-css/
 
 ## How to:
 
