@@ -55,7 +55,7 @@ The framework's documentation was included in this repo in the root directory, s
 
 ## [Author](http://araujo.cc)
 
-* [Arthur Araújo](http://araujo.cc)
+* [Arthur Ronconi](https://devarthur.com)
 
 ## [Creative Commons License](http://creativecommons.org/licenses/by-sa/4.0/)
 
