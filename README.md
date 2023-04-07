@@ -45,15 +45,15 @@ It's easy to use, simple and scalable.
 </p>
 ```
 
-## [Documentation](http://helpers.araujo.cc)
+## [Documentation](https://webarthur.github.io/helpers-css/)
 
 The framework's documentation was included in this repo in the root directory, search for index.html file. The docs may also be run locally.
 
-* [Text](http://helpers.araujo.cc/#text)
-* [Layout](http://helpers.araujo.cc/#layout)
-* [Mobile/Printer](http://helpers.araujo.cc/#mobile)
+* [Text](https://webarthur.github.io/helpers-css/#text)
+* [Layout](https://webarthur.github.io/helpers-css/#layout)
+* [Mobile/Printer](https://webarthur.github.io/helpers-css/#mobile)
 
-## [Author](http://araujo.cc)
+## [Author](https://devarthur.com)
 
 * [Arthur Ronconi](https://devarthur.com)
 
